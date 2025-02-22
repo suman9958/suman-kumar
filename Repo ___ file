@@ -1,0 +1,43 @@
+#Power bi__ deshboard__ Project
+This is a Power Bi End to End
+
+Like This is a repo structure
+ds_project/
+│-- data/                  # Raw & processed data (avoid committing raw data to Git)
+│   │-- raw/               # Unprocessed, original datasets
+│   │-- processed/         # Cleaned, transformed data
+│   └-- external/          # External datasets (e.g., APIs, third-party sources)
+│
+│-- notebooks/             # Jupyter Notebooks for exploration & analysis
+│   │-- 01_data_exploration.ipynb
+│   │-- 02_feature_engineering.ipynb
+│   └-- 03_model_training.ipynb
+│
+│-- src/                   # Source code for data processing & modeling
+│   │-- data_prep.py       # Data cleaning & preprocessing scripts
+│   │-- train_model.py     # Model training script
+│   └-- evaluate.py        # Model evaluation script
+│
+│-- models/                # Saved machine learning models
+│   └-- model.pkl          # Example of a serialized model
+│
+│-- reports/               # Generated reports & visualizations
+│   └-- model_performance.pdf
+│
+│-- configs/               # Configuration files (YAML, JSON)
+│   └-- config.yaml
+│
+│-- tests/                 # Unit tests for reproducibility
+│   └-- test_data_prep.py
+│
+│-- logs/                  # Logs from training & debugging
+│
+│-- requirements.txt       # List of dependencies
+│-- environment.yml        # Conda environment file (alternative to requirements.txt)
+│-- setup.py               # Installable package setup (optional)
+│-- README.md              # Project overview & instructions
+│-- .gitignore             # Ignored files (e.g., `data/raw`, `.env`)
+│-- LICENSE                # License information
+│-- Makefile               # Automation commands (optional)
+│
+└── .dvc/ (if using DVC)   # Data version control directory
